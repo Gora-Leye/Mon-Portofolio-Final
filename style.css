@@ -26,27 +26,30 @@ header{
 
     /* Comportment du menu sur les petits écrans mobile  */
   }
- @media (max-width: 768px) {
-  .navigation {
-    flex-direction: row;        /* logo à gauche, menu à droite */
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px 8px;
-  }
+/* Responsive : écran ≤ 768px */
+@media(max-width: 768px){
+    .navigation {
+        flex-direction: column; 
+        align-items: flex-start;
+        padding: 10px 20px; 
+    }
 
-  .logo {
-    font-size: 14px;           /* logo plus petit */
-  }
+    .menu {
+        flex-direction: column; 
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+        display: flex; 
+    }
 
-  .menu {
-    flex-direction: row;
-    gap: 6px;                  /* moins d'espace entre les liens */
-  }
-
-  .menu li a {
-    font-size: 12px;           /* texte réduit */
-  }
+    .menu li a {
+        width: 100%;
+        display: block;
+        padding: 10px 15px;
+        font-size: 16px; 
+    }
 }
+
 
   
 .logo{ 
