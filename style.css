@@ -26,26 +26,28 @@ header{
 
     /* Comportment du menu sur les petits écrans mobile  */
   }
-  @media (max-width: 768px) {
+ @media (max-width: 768px) {
   .navigation {
-    flex-direction: row;   
+    flex-direction: row;        /* logo à gauche, menu à droite */
     justify-content: space-between;
-    padding: 10px 20px;
-  }
-
-  .menu {
-    flex-direction: row;   
-    gap: 10px;            
-  }
-
-  .menu li a {
-    font-size: 14px;       
+    align-items: center;
+    padding: 4px 8px;
   }
 
   .logo {
-    font-size: 20px;       
+    font-size: 14px;           /* logo plus petit */
+  }
+
+  .menu {
+    flex-direction: row;
+    gap: 6px;                  /* moins d'espace entre les liens */
+  }
+
+  .menu li a {
+    font-size: 12px;           /* texte réduit */
   }
 }
+
   
 .logo{ 
     font-size: 28px;
