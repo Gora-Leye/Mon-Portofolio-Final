@@ -24,26 +24,29 @@ header{
                 /* l’alignement vertical des éléments dans le conteneur. */
     padding: 10px 50px ;
 
-    
-/* le comportement de mon barre de menu pour les petits écrans */
-}
-@media (max-width: 768px) {
+    /* Comportment du menu sur les petits écrans mobile  */
+  }
+  @media (max-width: 768px) {
   .navigation {
-    flex-direction: column;   
-    padding: 10px;
+    flex-direction: row;   
+    justify-content: space-between;
+    padding: 10px 20px;
   }
 
   .menu {
-    flex-direction: column;   
-    gap: 10px;
-    margin-top: 10px;
+    flex-direction: row;   
+    gap: 10px;            
   }
 
   .menu li a {
-    font-size: 16px;  
+    font-size: 14px;       
+  }
+
+  .logo {
+    font-size: 20px;       
   }
 }
-
+  
 .logo{ 
     font-size: 28px;
     font-weight: bold;
